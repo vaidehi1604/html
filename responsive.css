@@ -1,0 +1,50 @@
+body{
+    margin:auto;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    /* display:flex; */
+    font-size:1em;
+    background-color: aqua;
+}
+table{
+    height:60%;
+    width:60%;
+    text-align: center;
+    border:0.5px solid gray;
+
+}
+table th{
+    background-color: rgb(136, 204, 204);
+}
+.list{
+    display: flex;
+    flex-direction:column;
+}
+.form{
+    padding:20px;
+    margin:auto;
+    width:50%;
+    height: auto;
+    border:0.1px solid  gray;
+    background-color: rgb(148, 198, 198);
+}
+.form label{
+    padding:5px;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: black;
+        color:white;
+    }
+    .form{
+        background-color: bisque;
+    }
+    .table th{
+        background-color: black;
+        color:white;
+    }
+
+
+}

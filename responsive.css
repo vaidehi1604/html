@@ -1,18 +1,27 @@
 body{
-    margin:auto;
+    align-items: center;
     margin:0px;
     padding:0px;
     width:100%;
     /* display:flex; */
     font-size:1em;
-    background-color: aqua;
+    background-color:whitesmoke;
 }
 table{
+    padding:5px;
     height:60%;
     width:60%;
     text-align: center;
     border:0.5px solid gray;
 
+}
+button{
+    margin-top:5px;
+    padding:10px 15px;
+    background-color: brown;
+    color:blue;
+    border:none;
+    margin-left:80px ;
 }
 table th{
     background-color: rgb(136, 204, 204);
@@ -45,6 +54,24 @@ table th{
         background-color: black;
         color:white;
     }
-
+    
 
 }
+    .container{
+        display: grid;
+        /* grid-template-columns:1fr 1fr 1fr 1fr 1fr; */
+       grid-template-columns: repeat(5,1fr);
+       /* grid-template-rows: repeat(1,100px 100px); */
+        /* grid-auto-flow:row; */
+        grid-template-rows: 100px;
+        gap: 10px;
+    }
+    .cell{
+        height:100%;
+        width:100%;
+        background-color:green;
+        text-align: center;
+        margin:auto;
+    }
+
+
